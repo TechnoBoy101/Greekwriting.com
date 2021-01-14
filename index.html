@@ -1,0 +1,76 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html  onclick="setFocus()">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Type Greek.com convert text from a standard keyboard into beautiful, polytonic, Unicode-compliant Greek characters as you type.">
+  <meta name="keywords" content="type greek,type greek characters,greek characters,type,greek,unicode,polytonic greek,beta code">
+  <script type="text/javascript">
+
+    function setFocus() { document.getElementById('input').focus(); }
+
+  </script>
+
+  <title>Write in Greek.com</title>
+
+  <link rel="shortcut icon" href="C:\Users\Guest\Desktop\DAGGER\Translator\Transator Logo 1.png">
+  <script type="text/javascript" src="http://www.typegreek.com/typegreek.js"></script>  
+
+</head>
+<div class="intro" style="position: absolute;">
+  <img src="C:\Users\Guest\Desktop\DAGGER\aquamarine.PNG" style="height: 200px; position: relative; width: 1325px;">
+<img src="C:\Users\Guest\Desktop\DAGGER\Translator\Transator Logo 1.png" style="height: 200px; position: absolute; left: 300px;">
+
+<h1 style="position: absolute; left: 475px; top: 60px; font-size: 30px;">Write in Greek</h1>
+<p style="position: absolute; left: 750px; top: 55px; font-size: 20px; color: grey; text-shadow: 50px;">Convert text from a standard keyboard into beautiful Greek characters as you type.</p>
+
+</div>
+<body id="home">
+
+
+  <div id="main"><div class="wrapper">
+
+    <div id="content" style="position: absolute; top: 200px; left: 170px;" >
+      <input style="position: absolute; top: 350px; left: -6px;" type="checkbox" id="convertGreek" name="convertGreek" onclick="setFocus()">
+      <label style="position: absolute; top: 351px; left: 15px;">Convert to Greek</label>
+      <textarea autofocus="true" style="font-size: 25px;" rows=10 cols=70 name="textArea" onKeyPress="return convertCharToggle(this, document.getElementById('convertGreek').checked , event);" onKeyUp="return convertStr( this, event );" tabindex="3" class="greektext" id="input" onfocus="document.getElementById('input').style.border='none' "></textarea>
+      
+
+    <noscript>
+      <form action="http://www.typegreek.com/" method="post" style="background: #D4EAF7; overflow: auto; margin: 0px; padding: .5em; overflow: hidden;">
+        <p style="margin: 0 .5em .5em 0; white-space: nowrap;">Recommendation - <br />
+        <b>Warning</b>:  include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 in <b>/home/polumetis/webapps/typegreek/wp-content/themes/typegreek/page.php</b> on line <b>84</b><br />
+        <br />
+        <b>Warning</b>:  include(http://www.typegreek.com/wp-content/themes/typegreek/typegreek-recommendations.php): failed to open stream: no suitable wrapper could be found in <b>/home/polumetis/webapps/typegreek/wp-content/themes/typegreek/page.php</b> on line <b>84</b><br />
+        <br />
+        <b>Warning</b>:  include(): Failed opening 'http://www.typegreek.com/wp-content/themes/typegreek/typegreek-recommendations.php' for inclusion (include_path='.:/usr/local/share/pear56') in <b>/home/polumetis/webapps/typegreek/wp-content/themes/typegreek/page.php</b> on line <b>84</b><br />
+        </p>
+        <div><textarea class="greek" name="textArea" rows="9" cols=50></textarea></div>
+        <div id="textarea-actions">
+          <div id="warning">You must have Javascript enabled to convert characters in real time. <a href="http://www.typegreek.com/requirements/javascript/">Read more</a>.</div>
+          <div id="convertButton"><input type="submit" name="convert" value="Convert" class="button"></div>
+        </div>
+      </form>
+    </noscript>
+
+      
+    </div>
+
+  </div>
+</div>
+
+</body>
+</style>
+<style type="text/css">
+html {margin: 0; height: 100%; padding-bottom: 1px;}
+body {margin: 0; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 80%;}
+.greektext {
+
+font-family: "TITUS Cyberbit Basic", "Gentium", "New Athena Unicode", "Palatino Linotype", "Arial Unicode MS", "Georgia Greek";
+
+font-size:150%;
+
+}
+</style>
+</html>
